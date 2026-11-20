@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="My Loan Applications">
+        <template if:true={loans}>
+            <lightning-datatable
+                key-field="Id"
+                data={loans}
+                columns={columns}>
+            </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>
